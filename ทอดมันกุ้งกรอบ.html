@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIOA - Art Toy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav button {
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .product-details {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            gap: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .product-details img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-text {
+            max-width: 50%;
+        }
+
+        .product-text h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-text p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .product-details {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .product-details img {
+                max-width: 80%;
+            }
+
+            .product-text {
+                max-width: 90%;
+            }
+        }
+
+        footer {
+            background-color: #ff9900;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://i.imgur.com/xBDpsPG.png" alt="STUDIOA Logo">
+            <nav>
+                <button onclick="window.location.href='StudioB.html'">หน้าหลัก</button>
+                <button onclick="window.location.href='ประเภทผัด.html'">ประเภทผัด</button>
+                <button onclick="window.location.href='ประเภททอด.html'">ประเภททอด</button>
+                <button onclick="window.location.href='ประเภทต้ม.html'">ประเภทต้ม</button>
+                <button onclick="window.location.href='ประเภทแกง.html'">ประเภทแกง</button>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="product-details">
+                <div class="product-text">
+                    <h1>วิธีทำ “ทอดมันกุ้งกรอบ”</h1>
+                    <p>
+                        <b>วัตถุดิบ</b><br>
+                        1. กุ้งขาว 500 กรัม<br>
+                        2. หมูสามชั้น 100 กรัม<br>
+                        3. คนอร์ขวด ซอสข้นปรุงรส รสหมู 1 ช้อนโต๊ะ<br>
+                        4. รากผักชี 1 ช้อนโต๊ะ<br>
+                        5. กระเทียม 1 ช้อนโต๊ะ<br>
+                        6. พริกไทย 1 ช้อนโต๊ะ<br>
+                        7. ไข่ไก่ 2 ฟอง<br>
+                        8. แป้งทอดกรอบ 100 กรัม<br>
+                        9. เกล็ดขนมปัง 100 กรัม<br>
+                        10. น้ำมันสำหรับทอด 2 ถ้วยตวง<br><br>
+                        <b>วิธีทำ</b><br>
+                        <b>STEP 1 : ผสมทอดมันกุ้ง</b><br>
+                        - นำกุ้งขาว หมูสามชั้น ไข่ไก่ 1 ฟอง รากผักชี พริกไทย และกระเทียมใส่ลงในโถปั่น ปรุงรสด้วยคนอร์ขวด ซอสข้นปรุงรส รสหมู 1 ช้อนโต๊ะ ปั่นทุกอย่างให้ละเอียดเข้ากัน<br>
+                        - นำส่วนผสมที่ปั่นเสร็จแล้วไปแช่ในตู้เย็นประมาณ 30 นาที<br>
+                        <b>STEP 2 : ทอด</b><br>
+                        - นำส่วมผสมของทอดมันกุ้งมาปั้นเป็นก้อนเท่า ๆ กันแล้วนำไปคลุกกับแป้งทอดกรอบ ไข่ไก่ และเกล็ดขนมปัง จากนั้นนำลงไปทอดในน้ำมันร้อน ๆ ทอดจนมันสุกกรอบ และเปลี่ยนสีน้ำตาล จากนั้นจึงตักขึ้นพักให้สะเด็ดน้ำมัน<br>
+                        <b>STEP 3 : จัดเสิร์ฟ</b><br>
+                        - นำทอดมันกุ้งกรอบที่สะเด็ดน้ำมันแล้วมาเสียบไม้ จัดเรียงใส่จานเสิร์ฟคู่กับน้ำจิ้มไก่ เพียงเท่านี้ “ทอดมันกุ้งกรอบ” ของเราก็พร้อมให้ทุกคนลิ้มลองแล้วค่า! <br>
+                        
+                        
+                    </p>
+                </div>
+                <img src="https://i.imgur.com/PZH6jZf.png" alt="Product 5">
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 STUDIOB. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

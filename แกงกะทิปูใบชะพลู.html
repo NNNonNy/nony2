@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIOA - Art Toy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav button {
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .product-details {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            gap: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .product-details img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-text {
+            max-width: 50%;
+        }
+
+        .product-text h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-text p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .product-details {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .product-details img {
+                max-width: 80%;
+            }
+
+            .product-text {
+                max-width: 90%;
+            }
+        }
+
+        footer {
+            background-color: #ff9900;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://i.imgur.com/xBDpsPG.png" alt="STUDIOA Logo">
+            <nav>
+                <button onclick="window.location.href='StudioB.html'">หน้าหลัก</button>
+                <button onclick="window.location.href='ประเภทผัด.html'">ประเภทผัด</button>
+                <button onclick="window.location.href='ประเภททอด.html'">ประเภททอด</button>
+                <button onclick="window.location.href='ประเภทต้ม.html'">ประเภทต้ม</button>
+                <button onclick="window.location.href='ประเภทแกง.html'">ประเภทแกง</button>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="product-details">
+                <div class="product-text">
+                    <h1>วิธีทำ “แกงกะทิปูใบชะพลู”</h1>
+                    <p>
+                        <b>วัตถุดิบพริกแกงคั่วใต้</b><br>
+                        1. พริกแห้งแช่น้ำ 20 เม็ด <br>
+                        2. ข่าแก่หั่นแว่นบาง 1 ช้อนโต๊ะ <br>
+                        3. ขมิ้นสดหั่นบาง 3 ท่อน <br>
+                        4. ตะไคร้ซอย 5 ต้น <br>
+                        5. หอมแดง 6 หัว <br>
+                        6. กระเทียม 3 ช้อนโต๊ะ <br>
+                        7. พริกไทยเม็ด 1 ช้อนชา <br>
+                        8. กะปิ 1 ช้อนชา <br>
+                        9. เกลือ 1/2 ช้อนชา <br><br>
+                        <b>วัตถุดิบแกง</b><br>
+                        1. กรรเชียงปู 300 กรัม <br>
+                        2. ใบชะพลูซอย 1 ถ้วย <br>
+                        3. กะทิ 100% ตราเรียลไทย 250 มิลลิลิตร (ใช้สำหรับทำหัวกะทิ) <br>
+                        4. น้ำเปล่า 250 มิลลิลิตร <br>
+                        5. กะทิ 100% ตราเรียลไทย 250 มิลลิลิตร (ใช้สำหรับทำหางกะทิ) <br>
+                        6. พริกแกงคั่วใต้ 4 ช้อนโต๊ะ <br>
+                        5. กะปิ 1 ช้อนโต๊ะ <br>
+                        7. น้ำปลา 2 ช้อนโต๊ะ <br>
+                        8. น้ำตาลปี๊บ 1 ช้อนโต๊ะ <br><br>
+                        <b>วิธีทำ</b><br>
+                        <b>STEP 1 : ตำพริกแกง</b><br>
+                        - นำพริกไทยเม็ดใส่ลงไปในครกแล้วโขลกให้ละเอียด เมื่อละเอียดแล้วใส่พริกแห้งแช่น้ำ ข่าแก่หั่นแว่น ขมิ้นสดหั่นบาง ตะไคร้ซอย หอมแดง และเกลือแล้วโขลกให้ละเอียด<br>
+                        - เมื่อละเอียดแล้วใส่กะปิลงไปโขลกให้เข้ากัน จากนั้นพีกเอาไว้เตรียมนำไปใส่ในแกง<br>
+                        <b>STEP 2 : ผสมแกง</b><br>
+                        - ตั้งหม้อบนเตาแก๊สโดยใช้ไฟปานกลาง จากนั้นใส่ กะทิ 100% ตราเรียลไทย (ใช้สำหรับทำหัวกะทิ) ลงไปในหม้อ เมื่อกะทิเริ่มเดือดแล้วใส่พริกแกงที่เตรียมไว้ (STEP 1) ลงไป คนให้เข้ากัน<br>
+                        - เมื่อพริกแกงละลายแล้ว ให้นำน้ำเปล่าผสมกับ กะทิ 100% ตราเรียลไทย (ใช้สำหรับทำหางกะทิ) คนให้เข้ากัน จากนั้นเทลงไปในหม้อค่ะ<br>
+                        - เมื่อกะทิเริ่มเดือดแล้วให้ปรุงรสด้วยกะปิ น้ำปลา และน้ำตาลปี๊บ จากนั้นใส่กรรเชียงปู ต่อด้วยใบชะพลูซอยลงไปคนให้เข้ากัน เมื่อแกงเริ่มเดือดอีกครั้งให้ปิดไฟยกลงจากเตาได้เลยค่ะ<br>
+                        <b>STEP 3 : จัดเสิร์ฟ</b><br>
+                        - ตักแกงกะทิปูใบชะพลูลงในถ้วย นำกะทิมาราดด้านบนเพื่อตกแต่งให้สวยงาม เสิร์ฟพร้อมข้าวสวยร้อน ๆ เท่านี้ท้องก็เริ่มร้องแล้วจ้า <br>
+                        
+                    </p>
+                </div>
+                <img src="https://i.imgur.com/WGcGlvc.png" alt="Product 5">
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 STUDIOB. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

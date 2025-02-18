@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIOA - Art Toy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav button {
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .product-details {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            gap: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .product-details img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-text {
+            max-width: 50%;
+        }
+
+        .product-text h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-text p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .product-details {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .product-details img {
+                max-width: 80%;
+            }
+
+            .product-text {
+                max-width: 90%;
+            }
+        }
+
+        footer {
+            background-color: #ff9900;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://i.imgur.com/xBDpsPG.png" alt="STUDIOA Logo">
+            <nav>
+                <button onclick="window.location.href='StudioB.html'">หน้าหลัก</button>
+                <button onclick="window.location.href='ประเภทผัด.html'">ประเภทผัด</button>
+                <button onclick="window.location.href='ประเภททอด.html'">ประเภททอด</button>
+                <button onclick="window.location.href='ประเภทต้ม.html'">ประเภทต้ม</button>
+                <button onclick="window.location.href='ประเภทแกง.html'">ประเภทแกง</button>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="product-details">
+                <div class="product-text">
+                    <h1>วิธีทำ “กุยช่ายทอด”</h1>
+                    <p>
+                        <b>#ทิป</b><br>
+                        - ใส่เบกกิงโซดาเพื่อให้กุยช่ายไม่เป็นสีดำ<br>
+                        - ทาน้ำมันที่ถาดเล็กน้อย เพื่อให้กุยช่ายไม่ติดถาดตอนนึ่ง<br>
+                        - นำมีดแตะน้ำมันเล็กน้อยตอนตัดเพื่อไม่ให้แป้งติดมีดออกมา<br><br>
+                        <b>วัตถุดิบ</b><br>
+1. วัตถุดิบกุยช่ายทอด<br>
+2. ใบกุยช่าย 1 กิโลกรัม<br>
+3. แป้งข้าวเจ้า 360 กรัม<br>
+4. แป้งมัน 45 กรัม<br>
+5. น้ำเปล่า 500 กรัม<br>
+6. เบคกิ้งโซดา ½ ช้อนชา<br>
+7. กระเทียมสับหยาบ 2 ช้อนชา<br>
+8. เกลือ 2 ช้อนชา<br><br>
+<b>วัตถุดิบน้ำจิ้มกุยช่าย</b><br>
+1. น้ำตาลทราย 60 กรัม<br>
+2. ซีอิ๊วดำหวาน 2 ช้อนโต๊ะ<br>
+3. น้ำส้มสายชู 2 ช้อนโต๊ะ<br>
+4. น้ำเปล่า 100 มิลลิลิตร<br>
+5. พริกขี้หนูสดบด 1 ช้อนโต๊ะ<br>
+6. เกลือ 1 ช้อนชา<br><br>
+<b>วิธีทำกุยช่ายทอด</b><br>
+<b>STEP 1 : ผัดใบกุยช่าย</b><br>
+- หั่นใบกุยช่ายเป็นท่อนเล็ก ๆ แล้วผึ่งให้สะเด็ดน้ำ<br>
+- ตั้งกระทะเจียวกระเทียมให้หอม ใส่ใบกุยช่าย เบกกิงโซดาอีก ปรุงรสด้วยเกลือ ผัดจนกระทั่งใบกุยช่ายนิ่ม<br>
+<b>STEP 2 : นึ่งและทอดกุยช่าย</b><br>
+- ผสมแป้งมัน แป้งข้าวเจ้า และน้ำเปล่า ใส่ใบกุยช่ายที่ผัด และปรุงรสให้เรียบร้อย ผสมให้ทุกอย่างเข้ากันดี<br>
+- ตักใส่ถาดสี่เหลี่ยมแล้วนำไปนึ่งใช้ไฟแรงให้สุกประมาณ 20 นาที<br>
+- พอนึ่งเสร็จแล้วก็ตัดเป็นชิ้น ๆ ขนาดพอดีคำ จะได้ทอดสุกง่าย<br>
+- นำกุยช่ายลงทอดในน้ำมันที่ร้อนจัดให้เหลืองกรอบ<br><br>
+<b>STEP 3 : ทำน้ำจิ้มกุยช่าย และจัดเสิร์ฟ</b><br>
+- นำส่วนผสมน้ำจิ้มกุยช่ายทั้งหมดมาผสมให้เข้ากัน แล้วนำขึ้นตั้งไฟ<br>
+- คนให้น้ำตาลทรายละลายให้หมด แล้วพักไว้ให้เย็น ใส่ถ้วยเตรียมเสิร์ฟ<br>
+- นำ “กุยช่ายทอด” ที่สะเด็ดน้ำมันแล้วมาเสิร์ฟพร้อมน้ำจิ้มกุยช่าย ก็เสร็จเป็นที่เรียบร้อย <br>
+
+                    </p>
+                </div>
+                <img src="https://i.imgur.com/bW2Nw3y.png" alt="Product 5">
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 STUDIOB. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

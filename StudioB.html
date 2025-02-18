@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIOB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px 20px;
+            color: white;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+        nav button {
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .grid-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        #home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            background-color: #f0f0f0;
+        }
+        #home img {
+            max-width: 100%;
+            height: auto;
+        }
+        .history {
+            text-align: center; 
+            margin: 0 auto; 
+            max-width: 800px; 
+            padding: 20px;
+        }
+        .history h2 {
+            margin-bottom: 10px; 
+        }
+        .history p {
+            line-height: 1.6; 
+        }
+        footer {
+            text-align: center;
+            background-color: #ff9900;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.imgur.com/xBDpsPG.png" alt="STUDIOA Logo">
+        <nav>
+            <button onclick="window.location.href='STUDIOB.html'">หน้าหลัก</button>
+            <button onclick="window.location.href='ประเภทผัด.html'">ประเภทผัด</button>
+            <button onclick="window.location.href='ประเภททอด.html'">ประเภททอด</button>
+            <button onclick="window.location.href='ประเภทต้ม.html'">ประเภทต้ม</button>
+            <button onclick="window.location.href='ประเภทแกง.html'">ประเภทแกง</button>
+        </nav>
+    </header>
+
+    <section id="home">
+        <img src="https://i.imgur.com/OPAcDie.png" alt="profile">
+    </section>
+
+    <div class="container">
+        <h1 class="section-title">อาหาร ในปัจจุบันนั้นผู้คนส่วนมากนิยมจะสั่งอาหารผ่านแอปพลิเคชั่นเป็นส่วนมาก เนื่องจากมีความสะดวกสบายมากกว่าการทำอาหารกินเอง
+            แต่ทว่า การทำอาหารกินเองนั้นสามารถทำให้ประหยัดขึ้นได้เป็นอย่างมาก ทำรสชาติที่ตัวเองถูกปากได้ แถมยังเก็บไว้กินได้หลายมื้ออีกด้วย
+            เนื่องด้วยผู้คนส่วนมากเป็นนักเรียน นักศึกษา พนักงานเงินเดือน ที่รายได้ไม่ค่อยมากนัก ดั้งนั้น การทำอาหารกินเองที่บ้านอาจจะไม่ใช่เรื่องแปลก
+            แต่บางคนอาจจะทำอาหารไม่เป็น ทางเราจึงได้จัดหาสูตรมาให้ทุกท่านสามารถทำอาหารที่บ้านได้อย่างง่าย</h1>
+       <img src="https://gi.lnwfile.com/_/gi/_raw/2f/t0/af.jpg">
+    </div>
+
+    
+
+    <footer>
+        <p>© 2025 STUDIOB. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

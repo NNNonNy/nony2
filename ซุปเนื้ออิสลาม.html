@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIOA - Art Toy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav button {
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .product-details {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            gap: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .product-details img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-text {
+            max-width: 50%;
+        }
+
+        .product-text h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-text p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .product-details {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .product-details img {
+                max-width: 80%;
+            }
+
+            .product-text {
+                max-width: 90%;
+            }
+        }
+
+        footer {
+            background-color: #ff9900;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://i.imgur.com/xBDpsPG.png" alt="STUDIOA Logo">
+            <nav>
+                <button onclick="window.location.href='StudioB.html'">หน้าหลัก</button>
+                <button onclick="window.location.href='ประเภทผัด.html'">ประเภทผัด</button>
+                <button onclick="window.location.href='ประเภททอด.html'">ประเภททอด</button>
+                <button onclick="window.location.href='ประเภทต้ม.html'">ประเภทต้ม</button>
+                <button onclick="window.location.href='ประเภทแกง.html'">ประเภทแกง</button>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="product-details">
+                <div class="product-text">
+                    <h1>วิธีทำ “ซุปเนื้ออิสลาม”</h1>
+                    <p>
+                        <b>วัตถุดิบ</b><br>
+                        1. เนื้อวัวหั่นเต๋า 1 กิโลกรัม <br>
+                        2. ข่าแก่หั่นแว่น 4 แว่น <br>
+                        3. เก๋ากี้ 2 ช้อนโต๊ะ <br>
+                        4. อบเชย 2 แท่ง <br>
+                        5. โป๊ยกั๊ก 3 ดอก <br>
+                        6. ซีอิ๊วขาว 2 ช้อนโต๊ะ <br>
+                        7. ซอสหอยนางรม 2 ช้อนโต๊ะ <br>
+                        8. เกลือ 1 ช้อนชา <br>
+                        9. น้ำตาลปี๊บ 1 ช้อนโต๊ะ <br>
+                        10. พริกตำ 1 ช้อนโต๊ะ <br>
+                        11. มะนาว 2 ลูก <br>
+                        12. หอมหัวใหญ่ ½ ลูก <br>
+                        13. มะเขือเทศ 1 ลูก <br>
+                        14. ขึ้นฉ่าย สำหรับโรย <br>
+                        15. หอมเจียว สำหรับโรย <br><br>
+                        <b>วิธีทำ</b><br>
+                        <b>STEP 1 : ตุ๋น</b><br>
+                        - ตั้งหม้อใส่น้ำ ตั้งไฟจนเริ่มเดือด ใส่เนื้อวัวหั่นเต๋าลงไป อบเชย โป๊ยกั๊ก เก๋ากี๊ และข่า ลงไปตุ๋น ปรุงรสด้วย เกลือ ซีอิ๊วขาว ซอสหอยนางรม และน้ำตาลปี๊บ<br>
+                        - ตุ๋นไฟอ่อนไว้ เป็นเวลา 1 ชั่วโมง จากนั้นใส่หอมหัวใหญ่ มะเขือเทศ ตุ๋นต่ออีก 30 นาที<br>
+                        <b>STEP 2 : เสิร์ฟ</b><br>
+                        - ใส่พริกขี้หนู และบีบมะนาวลงในชามที่จะใช้เสิร์ฟ ตักซุปเนื้อที่ตุ๋นไว้ลงไป คนเล็กน้อยให้รสชาติเข้ากัน<br>
+                        - โรยหน้าด้วย หอมเจียว และขึ้นฉ่าย <br>
+                        
+                    </p>
+                </div>
+                <img src="https://i.imgur.com/5ikdVDl.png" alt="Product 5">
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 STUDIOB. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

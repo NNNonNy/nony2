@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIOA - Art Toy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav button {
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .product-details {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            gap: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .product-details img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-text {
+            max-width: 50%;
+        }
+
+        .product-text h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-text p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .product-details {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .product-details img {
+                max-width: 80%;
+            }
+
+            .product-text {
+                max-width: 90%;
+            }
+        }
+
+        footer {
+            background-color: #ff9900;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://i.imgur.com/xBDpsPG.png" alt="STUDIOA Logo">
+            <nav>
+                <button onclick="window.location.href='StudioB.html'">หน้าหลัก</button>
+                <button onclick="window.location.href='ประเภทผัด.html'">ประเภทผัด</button>
+                <button onclick="window.location.href='ประเภททอด.html'">ประเภททอด</button>
+                <button onclick="window.location.href='ประเภทต้ม.html'">ประเภทต้ม</button>
+                <button onclick="window.location.href='ประเภทแกง.html'">ประเภทแกง</button>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="product-details">
+                <div class="product-text">
+                    <h1>วิธีทำ “ต้มยำไข่น้ำ”</h1>
+                    <p>
+                        <b>วัตถุดิบ</b><br>
+                        1. เนื้อปลากรายบดละเอียด 500 กรัม <br>
+                        2. เนื้อกุ้งบดละเอียด 70 กรัม <br>
+                        3. เนื้อหมูบดละเอียด 50 กรัม <br>
+                        4. คนอร์ ซุปก้อนรสหมู 2 ก้อน <br>
+                        5. ซอสปรุงรส 1 ½ ช้อนโต๊ะ<br>
+                        6. สามเกลอ 1 ช้อนโต๊ะ <br>
+                        7. ต้นหอมซอย 2 ช้อนโต๊ะ <br>
+                        8. แป้งมันสำปะหลัง 150 กรัม <br>
+                        9. น้ำเกลือเย็นจัด 20 มิลลิลิตร (เกลือป่น 1/2 ช้อนชา) <br>
+                        10. น้ำเปล่า 2 ลิตร <br>
+                        11. กระเทียมเจียว สำหรับโรยหน้า <br>
+                        12. ผักชี สำหรับโรยหน้า <br><br>
+                        <b>วิธีทำ</b><br>
+                        <b>STEP 1 : หมักไส้เกี๊ยวปลา</b><br>
+                        - นำกุ้งบดละเอียดใส่ลงในชามผสม ตามด้วยเนื้อหมูบดละเอียด ซอสปรุงรส สามเกลอ และต้นหอมซอยคลุกเคล้าให้เข้ากัน พักทิ้งไว้เป็นเวลา 30 นาที ก่อนนำไปห่อเกี๊ยว<br>
+                        <b>STEP 2 : ทำเกี๊ยวปลา</b>
+                        - นำเนื้อปลากรายบดละเอียดใส่ลงในชามผสม ตามด้วยแป้งมันสำปะหลัง และน้ำเกลือเย็นจัด โดยค่อย ๆ ใส่น้ำเกลือลงไปนวดให้เข้ากัน ถ้าหากเนื้อปลาติดมือให้ทยอยใส่แป้งลงไป นวดจนเนื้อแป้งเป็นก้อนเนียนและไม่เหนียวติดมือ<br>
+                        - โรยแป้งนวลลงบนเขียงไม้เพื่อให้นวดแป้งเกี๊ยวแล้วไม่ติดเขียง วางเกี๊ยวปลาลงบนเขียงโดยใช้ไม้คลึงนวดให้เป็นแผ่นบาง ๆ และตัดให้ได้สี่เหลี่ยมจตุรัส ขนาด 3x3 นิ้ว เพื่อนำไปห่อไส้<br>
+                        - นำเกี๊ยวปลาไปห่อด้วยไส้ที่เราเตรียมไว้ (STEP 1) ห่อ แล้วพักไว้เตรียมนำไปลวก<br>
+                        - ตั้งหม้อน้ำบนเตาแก๊ส รอให้น้ำเดือดแล้วใส่เกี๊ยวปลาลงไปต้มให้สุก เมื่อเกี๊ยวปลาลอยขึ้นมาแล้วนำขึ้นจากน้ำ<br>
+                        <b>STEP 3 : ต้มน้ำซุป + จัดเสิร์ฟ</b><br>
+                        - ตั้งหม้อบนเตาแก๊สจากนั้นใส่น้ำเปล่าลงไป รอให้น้ำเดือดแล้วใส่ คนอร์ ซุปก้อนรสหมู ลงไปในน้ำเดือดคนให้เข้ากัน ใส่เกี๊ยวปลาที่ลวกไว้ลงไป (STEP 2) รอให้เดือดอีกรอบและน้ำซุปซึมเข้าเกี๊ยวปลา ปิดไฟและตักเสิร์ฟได้เลยค่ะ<br>
+                        - ตักเกี๊ยวปลาใส่ลงในชามจัดเสิร์ฟ โรยกระเทียมเจียวและผักชี เท่านี้ก็พร้อมฟินแล้วล่ะจ้า <br>
+                        
+                    </p>
+                </div>
+                <img src="https://i.imgur.com/cxLNCA5.png" alt="Product 5">
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 STUDIOB. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

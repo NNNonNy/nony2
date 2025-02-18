@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIOA - Art Toy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav button {
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .product-details {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            gap: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .product-details img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-text {
+            max-width: 50%;
+        }
+
+        .product-text h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-text p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .product-details {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .product-details img {
+                max-width: 80%;
+            }
+
+            .product-text {
+                max-width: 90%;
+            }
+        }
+
+        footer {
+            background-color: #ff9900;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://i.imgur.com/xBDpsPG.png" alt="STUDIOA Logo">
+            <nav>
+                <button onclick="window.location.href='StudioB.html'">หน้าหลัก</button>
+                <button onclick="window.location.href='ประเภทผัด.html'">ประเภทผัด</button>
+                <button onclick="window.location.href='ประเภททอด.html'">ประเภททอด</button>
+                <button onclick="window.location.href='ประเภทต้ม.html'">ประเภทต้ม</button>
+                <button onclick="window.location.href='ประเภทแกง.html'">ประเภทแกง</button>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="product-details">
+                <div class="product-text">
+                    <h1>วิธีทำ “เบอร์เกอร์ไก่กรอบ”</h1>
+                    <p>
+                        <b>วัตถุดิบ</b><br>
+                        1. สะโพกไก่เลาะกระดูก 4 ชิ้น <br>
+                        2. เกลือ 1 ช้อนโต๊ะ  <br>
+                        3. พริกไทย 1 ช้อนโต๊ะ  <br>
+                        4. ผงปาปริก้า 1 ช้อนโต๊ะ  <br>
+                        5. แป้งทอดกรอบ 2 ถ้วยตวง  <br>
+                        6. เบคอน 4 แผ่น  <br>
+                        7. ชีสเชดดา 2 แผ่น  <br>
+                        8. ผักกาดหอม 2 ใบ  <br>
+                        9. มะเขือเทศ 1 ลูก  <br>
+                        10. มายองเนส 1 ช้อนโต๊ะ  <br> <br>
+                        <b>วิธีทำ</b> <br>
+                        <b>STEP 1 : หมัก</b> <br>
+                        - คลุกเคล้าสะโพกไก่เลาะกระดูก กับ เกลือ พริกไทย และผงปาปริก้าให้เข้ากัน หมักไว้ให้เข้าเนื้อ 15-20 นาที <br>
+                        - เมื่อหมักจนเข้าเนื้อแล้ว นำสะโพกไก่มาคลุกกับแป้งทอดกรอบ 1 ครั้ง ก่อนจะนำไปชุบน้ำ แล้วนำมาคลุกแป้งทอดกรอบอีกที ขยี้ไก่กับแป้งให้เป็นเกล็ด เพื่อที่เวลาทอดจะทำให้หนังกรอบ <br>
+                        <b>STEP 2 : ทอด</b> <br>
+                        - ตั้งน้ำมันในกระทะใช้ไฟกลางค่อนแรง รอจนน้ำมันร้อน นำไก่ที่ชุบแป้งไว้ลงทอดจนสีเหลืองทอง ก่อนนำขึ้นปรับไฟแรง เพื่อให้กรอบนานไม่อมน้ำมัน <br>
+                        - นำเบคอนลงจี่ในกระทะ จนสุกกรอบ สำหรับนำไปเป็นไส้ตรงกลาง <br>
+                        <b>STEP 3 : เสิร์ฟ</b> <br>
+                        - ประกอบร่างเบอร์เกอร์ ด้วยการวางไก่ทอดเป็นฐาน ตามด้วยผักกาดหอม มะเขือเทศ มายองเนส เบคอน ชีส และปิดท้ายด้วยไก่ทอดอีกชั้นนึง เพียงเท่านี้ก็พร้อมอร่อยจุใจ!  <br>
+                        
+                    </p>
+                </div>
+                <img src="https://i.imgur.com/jG0n6vM.png" alt="Product 5">
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 STUDIOB. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

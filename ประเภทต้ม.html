@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crybaby</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff; 
+            color: white;
+            padding: 10px 20px;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+        nav button {
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        /* สไตล์ของ Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+        .product-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px;
+            white-space: nowrap;
+            justify-content: center; /* จัดให้อยู่ตรงกลาง */
+            max-width: 80%; /* ป้องกันไม่ให้กว้างเกินไป */
+         margin: 0 auto; /* จัดให้อยู่กึ่งกลางของหน้า */
+        }
+        .product {
+            width: 200px;
+            text-align: center;
+            flex: 0 0 auto;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .grid-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .history {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            background-color: #ff9900; 
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.imgur.com/xBDpsPG.png" alt="STUDIOA Logo">
+        <nav>
+            <button onclick="window.location.href='StudioB.html'">หน้าหลัก</button>
+            <button onclick="window.location.href='ประเภทผัด.html'">ประเภทผัด</button>
+            <button onclick="window.location.href='ประเภททอด.html'">ประเภททอด</button>
+            <button onclick="window.location.href='ประเภทต้ม.html'">ประเภทต้ม</button>
+            <button onclick="window.location.href='ประเภทแกง.html'">ประเภทแกง</button>
+        </nav>
+    </header>
+    <section id="home">
+        <img src="https://i.imgur.com/5MDoOGb.png" alt="profile" />
+    </section>
+    <style>
+        #home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        #home img {
+            max-width: 600%;
+            max-height: 600%;
+        }
+    </style>
+    <div class="section-title"><h3>อาหารประเภทต้ม</h3> <h5>คลิกรูปเพื่อดูรายละเอียด</h5></div>
+    <div class="product-container">
+        <div class="product">
+            <a href="ซุปเนื้ออิสลาม.html">
+                <img src="https://i.imgur.com/5ikdVDl.png" alt="Product 1">
+            </a>
+        </div>
+        <div class="product">
+            <a href="ต้มยำไข่น้ำ.html">
+                <img src="https://i.imgur.com/cxLNCA5.png" alt="Product 2">
+            </a>
+        </div>
+        <div class="product">
+            <a href="ซุปใสเกี๊ยวปลา.html">
+                <img src="https://i.imgur.com/2GiMRNY.png" alt="Product 3">
+            </a>
+        </div>
+        <div class="product">
+            <a href="ซุปกิมจิ.html">
+                <img src="https://i.imgur.com/LY5gImX.png" alt="Product 4">
+            </a>
+        </div>
+        <div class="product">
+            <a href="ซี่โครงหมูตุ๋นเยื่อไผ่.html">
+                <img src="https://i.imgur.com/NQu6ElE.png" alt="Product 5">
+            </a>
+        </div>
+        <div class="product">
+            <a href="ต้มเล้งแซ่บ.html">
+                <img src="https://i.imgur.com/Da5d329.png" alt="Product 5">
+            </a>
+        </div>
+    </div>
+    </div>
+    <main>
+        <div class="container">
+           <!--<h1 class="section-title">Cry Baby</h1>-->
+            <p class="text-center">
+                <b>ความหมายและความสำคัญของการต้ม</b><br>
+                การต้ม (boiling) จัดอยู่ในประเภทของการใช้ความร้อนชื้น (Moist-heat method) ในการประกอบอาหาร เป็นการทำอาหาร ให้สุกโดยใช้น้ำหรือของเหลวปริมาณมากเป็นตัวกลางนำความร้อน ของเหลวที่ใช้อาจเป็นน้ำซุป น้ำกะทิ น้ำนม เป็นต้น โดยใส่อาหารที่ จะทำให้สุกในของเหลวนั้น ให้ความร้อนจนอาหารสุก
+                
+            <div class="vertical-layout">
+                <div class="vertical-item">
+                    <img src="https://www.unileverfoodsolutions.co.th/dam/global-ufs/mcos/SEA/calcmenu/recipes/TH-recipes/soups/pork-stuffed-cabbage-soup/main-header.jpg">
+                    <h2>อาหารประเภทต้ม</h2>
+                    <p>
+                        อาหารประเภทต้มมีลักษณะเป็น “กับข้าวที่ปรุงเป็นน้ำ”ได้แก่ น้ำกะทิ นม น้ำเป็นต้น  หลักสำคัญของการต้มคือ เมื่อทำให้ของเหลวเดือดแล้วลดความร้อนลงเพื่อให้เดือดเบาๆ อาหารที่ต้มอาจใส่ลงไป ขณะที่น้ำเย็นหรือน้ำเดือดก่อนก็ได้ อาหารประเภทต้มจะมีชื่อต่างๆ กันตามรส วิธีและเครื่องปรุง เช่น แกงจืดเป็นแกงชนิดหนึ่งที่ไม่เผ็ด อาหารประเภทต้มต่างๆ ยกตัวอย่างเช่น
+                    </p>
+                </div>
+    
+                <div class="vertical-item">
+                    <img src="https://www.cpbrandsite.com/contents/images/x8ivgssgg1aqxgyoglbqb3vzq3sfycw8ou1neizt.png" alt="Standard Types">
+                    <!--<h2>Standard Types</h2>-->
+                     <p><b>หลักสำคัญของการต้ม</b> <br>
+                        -	หั่นอาหารเป็นชิ้นบางพอควร จะทำให้สุกเร็วขึ้น ชิ้นอาหารไม่ควร หั่นชิ้นเล็ก จะทำให้สูญเสียวิตามินบี <br>
+                        -	การต้มควรใช้น้ำน้อย ไฟแรง ใช้เวลาสั้น เมื่อของเหลวเดือด ใส่อาหารลงไป ลดไฟลง จนอาหารสุกนุ่ม <br>
+                        -	อาหารบางชนิด ใส่พร้อมน้ำเย็น ต้มด้วยไฟอ่อน ให้น้ำเดือดเบาๆ จนอาหารสุกไปพร้อมกัน เช่น ต้มไข่ ต้มน้ำซุป <br>
+                        </p>
+                </div>
+    
+                <div class="vertical-item">
+                    <img src="https://media.lul.la/wp-content/uploads/2023/03/29123436/312141991_699357524883355_8961976766402246012_n-1.jpg.webp" alt="Artist Types">
+                    <!--<h2>Artist Types</h2>-->
+                    <p><b>การต้มปลา</b><br>
+                        การหุงต้มปลาแตกต่างจากเนื้อสัตว์ชนิดอื่น เนื่องจากปลามีเส้นใย กล้ามเนื้อที่สั้น ใยกล้ามเนื้อของปลาจะแยกกันได้ง่ายเมื่อสุก จึงไม่ควรใช้เวลาในการหุงต้มนานจะทำให้เนื้อแข็ง และความหวาน ในเนื้อปลาหมดไป เนื่องจากโปรตีนในเนื้อปลาสลายตัวได้เร็ว ควรหุงต้มแค่พอสุก <br><br>
+                        <b>การต้มเนื้อหมู เนื้อวัว </b><br>
+                        - ในระหว่างการหุงต้มจะมีการเปลี่ยนแปลงที่เห็นได้ชัดคือ การเปลี่ยน สีเนื้อวัวดิบจะมีสีแดงสด ถ้าหุงต้มจนสุกจะเป็นสีเทาออกน้ำตาล ส่วนเนื้อหมูเมื่อสุกจะมีสีเทาอ่อน <br>
+                        - ในระหว่างการหุงต้ม โปรตีนในกล้ามเนื้อจะแข็งตัวทำให้เนื้อแข็งตัว เนื้อเยื่อพังผืดพวกคอลลาเจนจะเปลี่ยนเป็นเจลลาติน การต้มไก่และเป็ด <br>
+                        - ในการทำแกง จะผัดกะทิ กับน้ำพริกแกง ใส่ไก่หั่นชิ้นบางๆ แล้ว เติมหางกะทิ เคี่ยวจนไก่สุกนุ่ม <br>
+                        - การต้มเคี่ยวไก่และเป็ดทั้งตัว โดยใช้เวลานาน เช่น 2-3 ชั่วโมง เรียกว่า ตุ๋น นิยมใช้เครื่องเทศเพื่อดับกลิ่นสาบของตัวเป็ด การต้มกุ้ง ปู หมึก และหอย <br>
+                        - การหุงต้มกุ้ง ปู หมึก และหอย เนื้อสัตว์เหล่านี้สุกง่าย จึงต้องต้ม ด้วยอุณหภูมิสูง แต่ใช้ระยะเวลาสั้น เพื่อให้โปรตีนแข็งตัวทันที ถ้าใช้ ระยะเวลาในการหุงต้มนาน จะทำให้ความหวานลดลง <br><br>
+                        <b>การต้มผัก </b><br>
+                        - เมื่อของเหลวเดือด ใส่ อาหารลงไป จนอาหารสุก เช่น ต้มผัก<br>
+                        </p>
+                </div>
+    
+                <div class="vertical-item">
+                    <img src="https://i.imgur.com/HrwSwfJ.png" alt="Secret Types">
+                    <!--<h2>Secret Types</h2>-->
+                </div>
+            </div>
+        </div>
+    
+        <style>
+            .container {
+                text-align: center;
+            }
+    
+            .section-title {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+    
+            .vertical-layout {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+            }
+    
+            .vertical-item {
+                text-align: center;
+                max-width: 600px;
+            }
+    
+            .vertical-item img {
+                max-width: 100%;
+                height: auto;
+            }
+    
+            .vertical-item h2 {
+                font-size: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+    
+            .vertical-item p {
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+    </main>
+    
+
+    <footer>
+        <p>© 2025 STUDIOB. All Rights Reserved.</p>
+    </footer>
+     <!-- Popup Modal -->
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImage" src="" alt="สินค้า">
+        <p id="modalText"></p>
+    </div>
+</div>
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".product img").forEach((img, index) => {
+        img.addEventListener("click", function () {
+            window.location.href = "product" + (index + 1) + ".html"; // เปิดหน้าใหม่ตามลำดับสินค้า
+        });
+    });
+});
+</script>
+</body>
+</html>

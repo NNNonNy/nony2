@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIOA - Art Toy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav button {
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .product-details {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            gap: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .product-details img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-text {
+            max-width: 50%;
+        }
+
+        .product-text h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-text p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .product-details {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .product-details img {
+                max-width: 80%;
+            }
+
+            .product-text {
+                max-width: 90%;
+            }
+        }
+
+        footer {
+            background-color: #ff9900;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://i.imgur.com/xBDpsPG.png" alt="STUDIOA Logo">
+            <nav>
+            <button onclick="window.location.href='StudioB.html'">หน้าหลัก</button>
+            <button onclick="window.location.href='ประเภทผัด.html'">ประเภทผัด</button>
+            <button onclick="window.location.href='ประเภททอด.html'">ประเภททอด</button>
+            <button onclick="window.location.href='ประเภทต้ม.html'">ประเภทต้ม</button>
+            <button onclick="window.location.href='ประเภทแกง.html'">ประเภทแกง</button>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="product-details">
+                <div class="product-text"> 
+                    <h1>กุ้งผัดเม็ดมะม่วงหิมพานต์</h1>
+                    <p>
+                        <b>วัตถุดิบ</b><br>
+1. กุ้งสด 400 กรัม<br>
+2. แป้งทอดกรอบ 1 ถ้วย<br>
+3. กระเทียมสับ 1 ช้อนโต๊ะ <br>
+4. เม็ดมะม่วงหิมพานต์อบ ½ ถ้วย <br>
+5. พริกแห้งเม็ดใหญ่ 5 เม็ด <br>
+6. หอมหัวใหญ่ 1 หัว <br>
+7. พริกหวานสามสี ½ ถ้วย <br>
+8. ซอสหอยนางรม 2 ช้อนโต๊ะ <br>
+9. ซีอิ๊วขาว 2 ช้อนโต๊ะ <br>
+10. น้ำตาลทราย 1 ช้อนโต๊ะ <br>
+11. น้ำมันงา ½ ช้อนโต๊ะ <br>
+12. เหล้าจีน 1 ช้อนโต๊ะ <br>
+13. ต้นหอม 2 ต้น <br>
+14. แปะก๊วย ½ ถ้วย <br>
+15. แห้วสด ½ ถ้วย <br>
+<b>วิธีทำ</b><br>
+<b>STEP 1 : คลุกทอด</b><br>
+- นำกุ้งสดที่แกะเปลือกและนำเส้นดำออกเรียบร้อยแล้ว ไปชุบกับแป้งทอดกรอบ แล้วนำลงทอดในน้ำมันให้เหลืองกรอบ<br>
+- ตักกุ้งทอดขึ้นสะเด็ดน้ำมันพักไว้<br>
+<b>STEP 2 : ผัด</b><br>
+- ตั้งกระทะใบใหม่ ใส่น้ำมันเล็กน้อย ผัดกระเทียมให้ส่งกลิ่นหอม ตามด้วยหอมหัวใหญ่ และพริกหวานสามสี ผัดให้หัวหอมสุกใส<br>
+- ปรุงรสด้วย ซอสหอยนางรม ซีอิ๊วขาว และน้ำตาลทราย ผัดให้เข้ากัน ตามด้วยใส่กุ้งที่ทอดไว้ลงไปคลุกให้เข้ากัน<br>
+- เพิ่มความหอมด้วยเหล้าจีน และน้ำมันงา ตามด้วย เม็ดมะม่วงหิมพานต์อบ แปะก๊วย แห้ว พริกแห้ง และต้นหอม<br>
+<b>STEP 3 : เสิร์ฟ</b><br>
+- ตักใส่จานจัดเสิร์ฟ เท่านี้ก็พร้อมอร่อย! <br>
+
+                    </p>
+                </div>
+                <img src="https://i.imgur.com/zneMIJQ.png" alt="Product 2">
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 STUDIOB. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

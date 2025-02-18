@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIOA - Art Toy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav button {
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .product-details {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            gap: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .product-details img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-text {
+            max-width: 50%;
+        }
+
+        .product-text h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-text p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .product-details {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .product-details img {
+                max-width: 80%;
+            }
+
+            .product-text {
+                max-width: 90%;
+            }
+        }
+
+        footer {
+            background-color: #ff9900;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://i.imgur.com/xBDpsPG.png" alt="STUDIOA Logo">
+            <nav>
+                <button onclick="window.location.href='StudioB.html'">หน้าหลัก</button>
+                <button onclick="window.location.href='ประเภทผัด.html'">ประเภทผัด</button>
+                <button onclick="window.location.href='ประเภททอด.html'">ประเภททอด</button>
+                <button onclick="window.location.href='ประเภทต้ม.html'">ประเภทต้ม</button>
+                <button onclick="window.location.href='ประเภทแกง.html'">ประเภทแกง</button>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="product-details">
+                <div class="product-text">
+                    <h1>วิธีทำ “ข้าวผัดไข่แฮม”</h1>
+                    <p>
+                        <b>วัตถุดิบ</b><br>
+                        1. ข้าวสวย 1 ถ้วย <br>
+2. กระเทียม 1 ช้อนโต๊ะ <br>
+3. แครอท ¼ ถ้วย <br>
+4. แฮม ¼ ถ้วย <br>
+5. ไข่ไก่ 1 ฟอง <br>
+6. พริกไทย ½ ช้อนชา <br>
+7. น้ำมันพืช 1 ช้อนโต๊ะ<br>
+8. คนอร์ขวด ซอสข้นปรุงรส รสหมู 1 ช้อนโต๊ะ <br>
+9. ต้นหอม ตามชอบ <br><br>
+<b>วิธีทำ</b><br>
+<b>STEP 1 : ผัดเครื่อง</b><br>
+- นำจานร้อนขึ้นตั้งไฟแรง เทน้ำมันพืชลงไป ตามด้วยกระเทียม และแครอท<br>
+- ผัดจนเหลืองหอม<br>
+<b>STEP 2 : ประกอบร่าง</b><br>
+- ใส่ข้าวสวย แฮม คนอร์ขวด ซอสข้นปรุงรส รสหมู 1 ช้อนโต๊ะ และพริกไทย<br>
+- ตอกไข่ไก่ลงไป และโรยต้นหอม<br>
+<b>STEP 3 : จัดเสิร์ฟ</b><br>
+- เสิร์ฟแบบกระทะร้อน<br>
+- ผัดทุกอย่างเข้าด้วยกัน จนไข่สุก พร้อมรับประทานจ้า <br>
+
+                    </p>
+                </div>
+                <img src="https://i.imgur.com/43uNitI.png" alt="Product 5">
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 STUDIOB. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

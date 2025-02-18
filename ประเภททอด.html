@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaws</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff; 
+            color: white;
+            padding: 10px 20px;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+        nav button {
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        /* สไตล์ของ Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+        .product-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px;
+            white-space: nowrap;
+            justify-content: center; /* จัดให้อยู่ตรงกลาง */
+            max-width: 80%; /* ป้องกันไม่ให้กว้างเกินไป */
+         margin: 0 auto; /* จัดให้อยู่กึ่งกลางของหน้า */
+        }
+        .product {
+            width: 200px;
+            text-align: center;
+            flex: 0 0 auto;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .grid-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .history {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            background-color: #ff9900; 
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.imgur.com/xBDpsPG.png" alt="STUDIOA Logo">
+        <nav>
+            <button onclick="window.location.href='StudioB.html'">หน้าหลัก</button>
+            <button onclick="window.location.href='ประเภทผัด.html'">ประเภทผัด</button>
+            <button onclick="window.location.href='ประเภททอด.html'">ประเภททอด</button>
+            <button onclick="window.location.href='ประเภทต้ม.html'">ประเภทต้ม</button>
+            <button onclick="window.location.href='ประเภทแกง.html'">ประเภทแกง</button>
+        </nav>
+    </header>
+    <section id="home">
+        <img src="https://i.imgur.com/CSmIFL2.png" alt="profile" />
+    </section>
+    <style>
+        #home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        #home img {
+            max-width: 600%;
+            max-height: 600%;
+        }
+    </style>
+    <div class="section-title"><h3>อาหารประเภททอด</h3> <h5>คลิกรูปเพื่อดูรายละเอียด</h5></div>
+    <div class="product-container">
+        <div class="product">
+            <a href="หนวดปลาหมึกทอด.html">
+                <img src="https://i.imgur.com/vGHrwCa.png" alt="Product 1">
+            </a>
+        </div>
+        <div class="product">
+            <a href="ทอดมันกุ้งกรอบ.html">
+                <img src="https://i.imgur.com/PZH6jZf.png">
+            </a>
+        </div>
+        <div class="product">
+            <a href="เบอร์เกอร์ไก่กรอบ.html">
+                <img src="https://i.imgur.com/jG0n6vM.png">
+            </a>
+        </div>
+        <div class="product">
+            <a href="กุยช่ายทอด.html">
+                <img src="https://i.imgur.com/bW2Nw3y.png" alt="Product 4">
+            </a>
+        </div>
+        <div class="product">
+            <a href="นักเก็ตไก่.html">
+                <img src="https://i.imgur.com/BxFVubC.png" alt="Product 5">
+            </a>
+        </div>
+        <div class="product">
+            <a href="หอยทอดกระทะร้อน.html">
+                <img src="https://i.imgur.com/3cXXM2K.png" alt="Product 5">
+            </a>
+        </div>
+    </div>
+    </div>
+    <main>
+        <div class="container">
+            <h1 class="section-title">อาหารประเภททอด</h1>
+            <p class="text-center">
+                <b>Frying / การทอด</b>
+               </p>
+    
+            <div class="vertical-layout">
+                <div class="vertical-item">
+                    <img src="https://sou-dai.com/wp-content/uploads/2020/07/%E0%B9%80%E0%B8%97%E0%B8%84%E0%B8%99%E0%B8%B4%E0%B8%84%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%AD%E0%B8%94%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3_1.jpg" alt="Kaws">
+                    <p><b>การทอด หมายถึง</b> การทำอาหารให้สุกโดยใช้น้ำมันพืชหรือไขมันสัตว์ (fat) เป็นตัวกลางแลกเปลี่ยนความร้อน ปกติใช้
+                        อุณหภูมิในช่วง 170-210 องศาเซลเซียส <br>
+                        
+                        ประเภทของการทอด<br>
+                        
+                        - การทอดโดยใช้น้ำมันน้อย (pan frying) เป็นการทอดโดยการใช้น้ำมันหรือไขมันปริมาณเล็กน้อย เพียงเพื่อไม่ให้อาหาร
+                        ติดภาชนะทอด กระทะที่ใช้ทอดเป็นกระทะก้นตื้น (skillet) ระหว่างการทอดอาจมีการกลับด้านเพื่อให้อาหารสุกทั่วถึง
+                        ให้เกิดกลิ่นรสที่ต้องการ เช่น การทอดเนื้อสัตว์ แฮมเบอเกอร์ ไข่ดาว เบคอน เป็นต้น<br>
+                        
+                        - การทอดโดยใช้น้ำมันมากหรือน้ำมันท่วม (deep fat frying) เป็นการทอดที่ใช้น้ำมันปริมาณมาก โดยอาหารจมอยู่ภาชนะ
+                        ที่บรรจุน้ำมัน เกิดลักษณะผิวหน้าที่แห้ง กรอบ เป็นเปลือกสีน้ำตาล<br><br>
+<b>ตัวอย่างของอาหารที่แปรรูปด้วยการทอด</b><br>
+- ผัก ผลไม้ เช่น มันฝรั่ง กล้วย ขนุน ทุเรียน<br>
+- เนื้อสัตว์ เช่น เนื้อหมู ไก่ อาหารทะเล ทอดมัน<br>
+- แป้งและเบเกอรี่ ได้แก่ บะหมี่กึ่งสำเร็จรูป (instant noodle) ปาท่องโก๋ โดนัท ข้าวเกรียบอ และอาหารขบเคี้ยวต่าง ๆ<br><br>
+<b>ผลของการทอดต่อคุณภาพอาหาร</b><br>
+ระหว่างการทอด อาหารจะได้รับความร้อนโดยมีน้ำมันเป็นตัวกลางถ่ายเทความร้อน ความร้อนของน้ำมันที่อุณหภูมิสูงกว่า
+170 องศาเซลเซียส ทำให้น้ำภายในอาหารเดือด น้ำระเหยจากภายในออกสู่ภายนอก ทำให้ความชื้นของอาหารลดลง
+และผิวหน้าแห้งกรอบ การทอดมีผลต่ออาหารคือ<br>
+
+- ทำให้อาหารสุก โดยทำให้คาร์โบไฮเดรต เช่น แป้งเกิด gelatinizationโปรตีนเกิดการสูญเสียสภาพธรรมชาติ
+(protein denaturation)<br>
+- ทำลายจุลินทรีย์ที่จะทำให้อาหารเสื่อมเสีย (microbial spoilage) และจุลินทรีย์ก่อโรค (pathogen) รวมทั้ง
+เอนไซม์ในอาหาร<br>
+- ลดความชื้น (water content) และค่าวอเตอร์แอคทิวิตี้ (water activity,aw ) ให้ต่ำลง<br>
+- ทำให้เนื้อสัมผัสกรอบ ทั้งชิ้น หรือกรอบเฉพาะที่ผิวนอกของอาหาร<br><br>
+<b>น้ำมันทอด</b><br>
+
+- น้ำมันที่ใช้ทอดแบบน้ำมันท่วม ควรเป็นน้ำมันที่ทนความร้อนสูง และเสื่อมสลายตัวช้า คือมีจุดเกิดควัน (smoking point) ต่ำ
+เป็นน้ำมันที่มีปริมาณกรดไขมันไม่อิ่มตัว (saturated fatty acid) ต่ำ มีกรดไลโนเลอิก (linoleic acid) น้อยกว่าร้อยละ 2
+เช่น น้ำมันปาล์มโอเลอิน น้ำมันพืชที่ผ่านการไฮโดรจิเนชัน (hydrogenation) บางส่วน<br>
+- ไม่ควรใช้น้ำมันที่มีกรดไขมันไม่อิ่มตัวสูง เช่น น้ำมันถั่วเหลือง น้ำมันข้าวโพด น้ำมันเมล็ดคำฝอย และน้ำมันดอกทานตะวัน
+ในการทอดอาหาร เนื่องจากน้ำมันดังกล่าวไม่คงตัว และมีกรดลิโนเลอิก (linoleic acid) สูงถึงร้อยละ 6-7<br>
+- จากประกาศกระทรวงสาธารณสุข (ฉบับที่ 283) พ.ศ. 2547 โดยได้กำหนดให้น้ำมันที่ใช้ทอดหรือประกอบ
+อาหารเพื่อจำหน่าย ทั้งน้ำมันพืชและน้ำมันจากสัตว์ มีค่าสารโพลาร์ในน้ำมันได้ไม่เกิน 25% ของน้ำหนัก<br><br>
+<b>ปัจจัยที่มีผลต่อคุณภาพอาหารทอด</b><br>
+- ชนิดและส่วนประกอบของอาหาร<br>
+- ขนาดและรูปร่างของชิ้นอาหาร<br>
+- ชนิดและคุณภาพของน้ำมันทอด<br>
+- อุณหภูมิของน้ำมันทอด<br>
+- ปริมาณน้ำมันที่ใช้ทอด ว่าเป็นประเภทน้ำมันน้อยหรือน้ำมันท่วม<br>
+- การจัดการหลังการทอด ได้แก่ สะเด็ดน้ำมันหรือกำจัดน้ำมันส่วนเกินหลังการทอด<br>
+- การทำให้เย็น<br>
+                    </p>
+                </div>
+    
+                <div class="vertical-item">
+                    <img src="https://s359.kapook.com/pagebuilder/56daa724-60b7-4191-b572-1de97723648a.jpg" alt="Kaws">
+                </div>
+            </div>
+        </div>
+    
+        <style>
+            .container {
+                text-align: center;
+            }
+    
+            .section-title {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+    
+            .vertical-layout {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+            }
+    
+            .vertical-item {
+                text-align: center;
+                max-width: 600px;
+            }
+    
+            .vertical-item img {
+                max-width: 100%;
+                height: auto;
+            }
+    
+            .vertical-item h2 {
+                font-size: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+    
+            .vertical-item p {
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+    </main>
+    
+
+    <footer>
+        <p>© 2025 STUDIOB. All Rights Reserved.</p>
+    </footer>
+         <!-- Popup Modal -->
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImage" src="" alt="สินค้า">
+        <p id="modalText"></p>
+    </div>
+</div>
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".product img").forEach((img, index) => {
+        img.addEventListener("click", function () {
+            window.location.href = "product" + (index + 1) + ".html"; // เปิดหน้าใหม่ตามลำดับสินค้า
+        });
+    });
+});
+</script>
+</body>
+</html>
